@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 3.7vw;
+}
+ul,li{
+    list-style: none;
+}
+section > h3:first-child{
+    font-size: 4vw;
+    border-left: 2px solid #d33a31;
+    margin: 5vw 0 3vw;
+    font-weight: normal;
+    padding-left: 2vw;
+    line-height: 1;
+}
+
+.topbar{
+    background: #d43c33;
+    padding: 4.5vw 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.topbar .logo{
+    width: 38vw;
+}
+.topbar .appDownload{
+    line-height: 6.5vw;
+    border: 1px solid rgb(222,103,96);
+    border-radius: 4.5vw;
+    color: white;
+    text-decoration: none;
+    padding: 0 2vw;
+}
+
+.siteNav > ol{
+    display: flex;
+    text-align: center;
+    line-height: 9vw;
+    font-size: 1.1;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+.siteNav > ol >li{
+    flex:1;
+}
+.siteNav  ol li.active{
+    color: rgb(211,58,49);
+}
+
+.siteNav li span{
+    position: relative;
+    display: inline-block;
+    line-height: 9vw;
+}
+.siteNav ol li.active span::after{
+    border-bottom: 2px solid #d33a31;
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    right: -4px;
+}
+
+.playlists > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.8em;
+    margin-top: 18px;
+}
+.playlists ul img{
+    width: 100%;
+}
+.playlists > ul > li{
+    width: calc(33.3333% - 2px);
+    
+}
+.playlists > ul > li p{
+    padding: 1px 4px;
+    margin-bottom: 18px;
+    margin-top: 3px;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* .latestMusic{
+    margin-bottom: 80px;
+} */
+
+.latestMusic ol{
+    font-size: 14px;
+    margin: 25px 10px;
+}
+.latestMusic ol h3{
+    font-weight: normal;
+    letter-spacing: 2px;
+    
+}
+.latestMusic ol p{
+    color: rgb(136,136,136);
+    margin: 6px 0 16px;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.latestMusic ol li{
+    position: relative;
+}
+
+.latestMusic ol li span.icon-bofang{
+    color: rgb(136,136,136);
+    top: 50%;
+    position: absolute;
+    right:3px;
+    transform: translateY(-50%);
+    font-size: 21px;
+}
+.latestMusic ol li span.icon-sq{
+    color: #d33a31;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+section.art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(http://s3.music.126.net/m/s/img/recommand_bg_3x.png?f3a9aaa781c3bf3b543d129327d35fce) no-repeat center;
+    padding: 40px 0 30px;
+}
+.art .logo{
+    width: 55vw;
+    margin-bottom:15px;
+    
+}
+.art a{
+    border: 1px solid  rgb(216,84,77);
+    padding: 8px 60px;
+    border-radius: 4.5vw;
+    color: #d33a31;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+section .copyright{
+    font-size: 12px;
+    transform: scale(0.75);
+    color: rgb(136,136,136);
+}
